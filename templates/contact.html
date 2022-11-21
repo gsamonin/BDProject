@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap demo</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    </head>
+
+<header>
+    <div class="container" >
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+            <span class="fs-4">Бильярд Жорика</span>
+          </a>
+          <ul class="nav nav-pills">
+            <li class="nav-item"><a href="/" class="nav-link but" aria-current="page">Главная</a></li>
+            <li class="nav-item"><a href="/menu" class="nav-link">Меню</a></li>
+            <li class="nav-item"><a href="/price" class="nav-link">Прайс</a></li>
+            <li class="nav-item"><a href="/about" class="nav-link">О нас</a></li>
+            <li class="nav-item"><a href="/contact" class="nav-link">Контакты</a></li>
+          </ul>
+        </header>
+    </div>
+</header>
+
+<main>
+    <div class="container">
+        <div class="row align-items-start">
+            <div class="col">
+                 <div class="vc_column-inner ">
+                    <div class="wpb_wrapper">
+                        <div class="wpb_text_column wpb_content_element ">
+                            <div class="wpb_wrapper">
+                                <p><strong>Адрес:</strong><br>
+                                г. Москва, ул. б-р Мячковский д. 5к1</p>
+                                <p><strong>Станция метро:</strong></p>
+                                <ul>
+                                <li>Братиславская</li>
+                                <li>Марьино</li>
+                                </ul>
+                                <p><strong>Часы работы:</strong><br>
+                                Пн.-Пт. с 14:00 до 03:00<br>
+                                Сб.-Вс. с 12:00 до 03:00</p>
+                                <p><strong>Телефон:</strong><br>
+                                <a href="tel:+79266886264">+7(926)6886264</a></p>
+                                <p><strong>Email:</strong><br>
+                                <a href="mailto:info@jorik.ru" target="_blank" rel="noopener">info@jorik.ru</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-auto align-items-start float-md-end mb-3 ms-md-3">
+                <div class="wpb_column vc_column_container vc_col-sm-8">
+                    <div class="vc_column-inner ">
+                        <div class="wpb_wrapper">
+                            <div class="wpb_text_column wpb_content_element ">
+                                <div class="wpb_wrapper">
+                                    <p><iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7f0afbee05d5f3a6a03d4843dec9670d71fbdbcee81e832993f5147b9687061a&amp;source=constructor" width="500" height="400" frameborder="0"></iframe></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.ru/maps/213/moscow/?l=stv%2Csta&ll=37.754660%2C55.656940&panorama%5Bdirection%5D=273.358542%2C-6.613450&panorama%5Bfull%5D=true&panorama%5Bpoint%5D=37.754142%2C55.657412&panorama%5Bspan%5D=115.457075%2C60.000000&utm_medium=mapframe&utm_source=maps&z=18.2" style="color:#eee;font-size:12px;position:absolute;top:14px;">Москва — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCU6FUBVLB" width="1295" height="450" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+    </div>
+</main>
+
+<footer>
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="/" class="nav-link px-2 text-muted">Главная</a></li>
+      <li class="nav-item"><a href="/menu" class="nav-link px-2 text-muted">Меню</a></li>
+      <li class="nav-item"><a href="/price" class="nav-link px-2 text-muted">Прайс</a></li>
+      <li class="nav-item"><a href="/about" class="nav-link px-2 text-muted">О нас</a></li>
+      <li class="nav-item"><a href="/contact" class="nav-link px-2 text-muted">Контакты</a></li>
+    </ul>
+    <p class="text-center text-muted">© 2022 Жорик Инкорпорейтед</p>
+    <p class="text-center text-muted">Все права защищены</p>
+</footer>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    </body>
+
+
+</html>

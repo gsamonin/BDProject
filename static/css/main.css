@@ -1,0 +1,16 @@
+body {
+    background: green;
+}
+
+.my-carousel  .carousel-item{
+
+}
+.car {
+    width: 700px;
+    height: 500px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+.but hover {
+    background: green!important;
+}

@@ -25,6 +25,10 @@ def index():
         amountPer = guestsDetails['amountPer']
         time_nach = guestsDetails['time_nach']
         time_okon = guestsDetails['time_okon']
+        hn = datetime.strptime(time_nach, "%H:%M").time()
+        hk = datetime.strptime(time_okon, "%H:%M").time()
+        if hn > hk:
+            return "Даже самые дорогие в мире часы — не стоят одной секунды жизненного времени!"
         date_game = guestsDetails['date_game']
         dg = datetime.strptime(date_game, "%Y-%m-%d").date()
         if dg < dn:

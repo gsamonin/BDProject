@@ -1,6 +1,6 @@
 from flask import Flask, render_template, url_for, request
 from flask_mysqldb import MySQL
-import datetime
+from datetime import datetime
 
 
 app = Flask(__name__)
@@ -14,7 +14,7 @@ mysql = MySQL(app)
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
-    dn = datetime.date
+    dn = datetime.now().date()
     if request.method == "POST":
         guestsDetails = request.form
         firstname = guestsDetails['firstname']
@@ -26,7 +26,8 @@ def index():
         time_nach = guestsDetails['time_nach']
         time_okon = guestsDetails['time_okon']
         date_game = guestsDetails['date_game']
-        if date_game < str(dn):
+        dg = datetime.strptime(date_game, "%Y-%m-%d").date()
+        if dg < dn:
             return "Вы не можете играть в прошлом. " \
                    "Самое страшное — когда прошлым становятся те, кто должен был стать будущим."
         cur = mysql.connection.cursor()
